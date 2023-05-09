@@ -1,0 +1,130 @@
+{
+	"name": "inputYear2021_2022",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmfblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "2021 - 2022.csv",
+				"folderPath": "portfolio from ankit/summarisedfiles",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan ID",
+				"type": "String"
+			},
+			{
+				"name": "Customer ID",
+				"type": "String"
+			},
+			{
+				"name": "Client status (Alive / Death)",
+				"type": "String"
+			},
+			{
+				"name": "Group ID",
+				"type": "String"
+			},
+			{
+				"name": "Business correspondent (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Restructured (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "% of Retained AUM",
+				"type": "String"
+			},
+			{
+				"name": "Tranche name in case of securitized portfolio",
+				"type": "String"
+			},
+			{
+				"name": "Lending Instituion in case of securtized portfolio",
+				"type": "String"
+			},
+			{
+				"name": "Latest credit bureau score ",
+				"type": "String"
+			},
+			{
+				"name": "Write off status",
+				"type": "String"
+			},
+			{
+				"name": "Write off amount",
+				"type": "String"
+			},
+			{
+				"name": "Internal risk rating",
+				"type": "String"
+			},
+			{
+				"name": "Morat 1.0 availed (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Morat 2.0 availed (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "npa",
+				"type": "String"
+			},
+			{
+				"name": "booktype",
+				"type": "String"
+			},
+			{
+				"name": "PO",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD",
+				"type": "String"
+			},
+			{
+				"name": "Int OD",
+				"type": "String"
+			},
+			{
+				"name": "dpd",
+				"type": "String"
+			},
+			{
+				"name": "EMI",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int",
+				"type": "String"
+			},
+			{
+				"name": "IO",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

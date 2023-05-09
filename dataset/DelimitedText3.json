@@ -1,0 +1,190 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservicedemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "append.csv",
+				"folderPath": "outputfolder",
+				"container": "adfdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Name of the borrower",
+				"type": "String"
+			},
+			{
+				"name": "Name of the co - borrower",
+				"type": "String"
+			},
+			{
+				"name": "Date of birth",
+				"type": "String"
+			},
+			{
+				"name": "Customer ID",
+				"type": "String"
+			},
+			{
+				"name": "Loan No.",
+				"type": "String"
+			},
+			{
+				"name": "Client status",
+				"type": "String"
+			},
+			{
+				"name": "Group ID",
+				"type": "String"
+			},
+			{
+				"name": "Product type",
+				"type": "String"
+			},
+			{
+				"name": "Sub-product type",
+				"type": "String"
+			},
+			{
+				"name": "Scheme type",
+				"type": "String"
+			},
+			{
+				"name": "Date of disbursement",
+				"type": "String"
+			},
+			{
+				"name": "Disbursement amount",
+				"type": "String"
+			},
+			{
+				"name": "Processing Fees",
+				"type": "String"
+			},
+			{
+				"name": "Repayment frequency",
+				"type": "String"
+			},
+			{
+				"name": "Branch",
+				"type": "String"
+			},
+			{
+				"name": "Branch ID",
+				"type": "String"
+			},
+			{
+				"name": "Branch state",
+				"type": "String"
+			},
+			{
+				"name": "Hub",
+				"type": "String"
+			},
+			{
+				"name": "Hub ID",
+				"type": "String"
+			},
+			{
+				"name": "Hub state",
+				"type": "String"
+			},
+			{
+				"name": "Rate of interest",
+				"type": "String"
+			},
+			{
+				"name": "Sanction date",
+				"type": "String"
+			},
+			{
+				"name": "Sanction amount",
+				"type": "String"
+			},
+			{
+				"name": "Tenure",
+				"type": "String"
+			},
+			{
+				"name": "Loan iteration _ cycle",
+				"type": "String"
+			},
+			{
+				"name": "End use",
+				"type": "String"
+			},
+			{
+				"name": "EMI amount",
+				"type": "String"
+			},
+			{
+				"name": "Source of origination",
+				"type": "String"
+			},
+			{
+				"name": "Business correspondent ",
+				"type": "String"
+			},
+			{
+				"name": "Lending institution in case of business correspondent",
+				"type": "String"
+			},
+			{
+				"name": "Monthly _ Annual household income",
+				"type": "String"
+			},
+			{
+				"name": "FOIR",
+				"type": "String"
+			},
+			{
+				"name": "Age of the borrower",
+				"type": "String"
+			},
+			{
+				"name": "Occupation of the borrower",
+				"type": "String"
+			},
+			{
+				"name": "Number of members in the family",
+				"type": "String"
+			},
+			{
+				"name": "Credit bureau score at the time of disbursement",
+				"type": "String"
+			},
+			{
+				"name": "Internal risk rating ",
+				"type": "String"
+			},
+			{
+				"name": "Customer type ",
+				"type": "String"
+			},
+			{
+				"name": "New to credit ",
+				"type": "String"
+			},
+			{
+				"name": "District",
+				"type": "String"
+			},
+			{
+				"name": "Restructured",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

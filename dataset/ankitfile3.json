@@ -1,0 +1,534 @@
+{
+	"name": "ankitfile3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmfblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Light Microfinance_Monthly PoS_Apr '19 to Sep '22_3.0_edited.csv",
+				"folderPath": "portfolio from ankit",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan ID",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43556",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43586",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43617",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43647",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43678",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43709",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43739",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43770",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43800",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43831",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43862",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43891",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43922",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43952",
+				"type": "String"
+			},
+			{
+				"name": "EMI-43983",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44013",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44044",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44075",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44105",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44136",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44166",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44197",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44228",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44256",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44287",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44317",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44348",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44378",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44409",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44440",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44470",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44501",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44531",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44562",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44593",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44621",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44652",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44682",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44713",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44743",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44774",
+				"type": "String"
+			},
+			{
+				"name": "EMI-44805",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43556",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43586",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43617",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43647",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43678",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43709",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43739",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43770",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43800",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43831",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43862",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43891",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43922",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43952",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-43983",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44013",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44044",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44075",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44105",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44136",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44166",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44197",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44228",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44256",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44287",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44317",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44348",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44378",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44409",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44440",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44470",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44501",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44531",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44562",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44593",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44621",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44652",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44682",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44713",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44743",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44774",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Prin-44805",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43556",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43586",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43617",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43647",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43678",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43709",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43739",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43770",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43800",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43831",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43862",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43891",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43922",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43952",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-43983",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44013",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44044",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44075",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44105",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44136",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44166",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44197",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44228",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44256",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44287",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44317",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44348",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44378",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44409",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44440",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44470",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44501",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44531",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44562",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44593",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44621",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44652",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44682",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44713",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44743",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44774",
+				"type": "String"
+			},
+			{
+				"name": "Emi-Int-44805",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

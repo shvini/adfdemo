@@ -1,0 +1,9 @@
+{
+	"name": "VBATraining",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8b4d5686-10ce-4d85-bbee-63b30b81f7a5",
+		"tenantId": "d1f33b96-3a6a-448b-bbfd-2f90c11899e1"
+	}
+}

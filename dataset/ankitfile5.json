@@ -1,0 +1,25 @@
+{
+	"name": "ankitfile5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmfblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Light Microfinance_Monthly PoS_Oct '22 to Feb '23_edited.csv",
+				"folderPath": "portfolio from ankit",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

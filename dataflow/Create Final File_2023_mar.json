@@ -1,0 +1,97 @@
+{
+	"name": "Create Final File_2023_mar",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "in_2023_march",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "final2019_2020",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "select1"
+				},
+				{
+					"name": "select2"
+				},
+				{
+					"name": "derivedColumn1"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          ClientId as integer,",
+				"          AccountId as integer,",
+				"          LoanAmt as string,",
+				"          DisbursedDate as string,",
+				"          InterestRate as string,",
+				"          {Instalment Amount} as double,",
+				"          {No of Instalment} as short,",
+				"          {Instalment remaining} as string,",
+				"          PrincipalBalance as string,",
+				"          InterestBalance as string,",
+				"          {Principal Overdue} as string,",
+				"          {Interest Overdue} as string,",
+				"          {last repayment date} as string,",
+				"          report_generated_date as date,",
+				"          DPD as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source1 select(mapColumn(",
+				"          AccountID = AccountId,",
+				"          ClientID = ClientId,",
+				"          report_generated_date,",
+				"          PrincipalBalance,",
+				"          InterestBalance,",
+				"          {Principal Overdue},",
+				"          {Interest Overdue},",
+				"          DPD",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"derivedColumn1 select(mapColumn(",
+				"          AccountID,",
+				"          ClientID,",
+				"          {Client status (Alive / Death)},",
+				"          PrincipalBalance,",
+				"          InterestBalance,",
+				"          {Principal Overdue},",
+				"          {Interest Overdue},",
+				"          DPD,",
+				"          {Emi-Prin},",
+				"          {Emi-Int},",
+				"          booktype,",
+				"          report_generated_date",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select2",
+				"select1 derive({Client status (Alive / Death)} = '',",
+				"          {Emi-Prin} = 0,",
+				"          {Emi-Int} = 0,",
+				"          booktype = '') ~> derivedColumn1",
+				"select2 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Portfolio_report_new_2023-03-31.csv'],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> sink1"
+			]
+		}
+	}
+}

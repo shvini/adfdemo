@@ -1,0 +1,73 @@
+{
+	"name": "DelimitedText8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservicedemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "distbursement.csv",
+				"container": "dataflow"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan No.",
+				"type": "String"
+			},
+			{
+				"name": "Customer ID",
+				"type": "String"
+			},
+			{
+				"name": "Branch",
+				"type": "String"
+			},
+			{
+				"name": "Disbursement amount",
+				"type": "String"
+			},
+			{
+				"name": "Date of disbursement",
+				"type": "String"
+			},
+			{
+				"name": "Rate of interest",
+				"type": "String"
+			},
+			{
+				"name": "Group ID",
+				"type": "String"
+			},
+			{
+				"name": "Product type",
+				"type": "String"
+			},
+			{
+				"name": "Branch state",
+				"type": "String"
+			},
+			{
+				"name": "EMI amount",
+				"type": "String"
+			},
+			{
+				"name": "Repayment Frequncy",
+				"type": "String"
+			},
+			{
+				"name": "Filename",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

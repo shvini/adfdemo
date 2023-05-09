@@ -1,0 +1,226 @@
+{
+	"name": "DelimitedText10",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservicedemo",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "due_file.csv",
+				"folderPath": "input",
+				"container": "collection-phase3"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan ID",
+				"type": "String"
+			},
+			{
+				"name": "Mar-19",
+				"type": "String"
+			},
+			{
+				"name": "Apr-19",
+				"type": "String"
+			},
+			{
+				"name": "May-19",
+				"type": "String"
+			},
+			{
+				"name": "Jun-19",
+				"type": "String"
+			},
+			{
+				"name": "Jul-19",
+				"type": "String"
+			},
+			{
+				"name": "Aug-19",
+				"type": "String"
+			},
+			{
+				"name": "Sep-19",
+				"type": "String"
+			},
+			{
+				"name": "Oct-19",
+				"type": "String"
+			},
+			{
+				"name": "Nov-19",
+				"type": "String"
+			},
+			{
+				"name": "Dec-19",
+				"type": "String"
+			},
+			{
+				"name": "Jan-20",
+				"type": "String"
+			},
+			{
+				"name": "Feb-20",
+				"type": "String"
+			},
+			{
+				"name": "Mar-20",
+				"type": "String"
+			},
+			{
+				"name": "Apr-20",
+				"type": "String"
+			},
+			{
+				"name": "May-20",
+				"type": "String"
+			},
+			{
+				"name": "Jun-20",
+				"type": "String"
+			},
+			{
+				"name": "Jul-20",
+				"type": "String"
+			},
+			{
+				"name": "Aug-20",
+				"type": "String"
+			},
+			{
+				"name": "Sep-20",
+				"type": "String"
+			},
+			{
+				"name": "Oct-20",
+				"type": "String"
+			},
+			{
+				"name": "Nov-20",
+				"type": "String"
+			},
+			{
+				"name": "Dec-20",
+				"type": "String"
+			},
+			{
+				"name": "Jan-21",
+				"type": "String"
+			},
+			{
+				"name": "Feb-21",
+				"type": "String"
+			},
+			{
+				"name": "Mar-21",
+				"type": "String"
+			},
+			{
+				"name": "Apr-21",
+				"type": "String"
+			},
+			{
+				"name": "May-21",
+				"type": "String"
+			},
+			{
+				"name": "Jun-21",
+				"type": "String"
+			},
+			{
+				"name": "Jul-21",
+				"type": "String"
+			},
+			{
+				"name": "Aug-21",
+				"type": "String"
+			},
+			{
+				"name": "Sep-21",
+				"type": "String"
+			},
+			{
+				"name": "Oct-21",
+				"type": "String"
+			},
+			{
+				"name": "Nov-21",
+				"type": "String"
+			},
+			{
+				"name": "Dec-21",
+				"type": "String"
+			},
+			{
+				"name": "Jan-22",
+				"type": "String"
+			},
+			{
+				"name": "Feb-22",
+				"type": "String"
+			},
+			{
+				"name": "Mar-22",
+				"type": "String"
+			},
+			{
+				"name": "Apr-22",
+				"type": "String"
+			},
+			{
+				"name": "May-22",
+				"type": "String"
+			},
+			{
+				"name": "Jun-22",
+				"type": "String"
+			},
+			{
+				"name": "Jul-22",
+				"type": "String"
+			},
+			{
+				"name": "Aug-22",
+				"type": "String"
+			},
+			{
+				"name": "Sep-22",
+				"type": "String"
+			},
+			{
+				"name": "Oct-22",
+				"type": "String"
+			},
+			{
+				"name": "Nov-22",
+				"type": "String"
+			},
+			{
+				"name": "Dec-22",
+				"type": "String"
+			},
+			{
+				"name": "Jan-23",
+				"type": "String"
+			},
+			{
+				"name": "Feb-23",
+				"type": "String"
+			},
+			{
+				"name": "Mar-23",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

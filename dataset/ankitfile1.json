@@ -1,0 +1,386 @@
+{
+	"name": "ankitfile1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmfblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Light Microfinance_Monthly PoS_Apr '19 to Sep '22_1.0_Edited.csv",
+				"folderPath": "portfolio from ankit",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan ID",
+				"type": "String"
+			},
+			{
+				"name": "Customer ID",
+				"type": "String"
+			},
+			{
+				"name": "Client status (Alive / Death)",
+				"type": "String"
+			},
+			{
+				"name": "Group ID",
+				"type": "String"
+			},
+			{
+				"name": "Business correspondent (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Restructured (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "PO-43556",
+				"type": "String"
+			},
+			{
+				"name": "PO-43586",
+				"type": "String"
+			},
+			{
+				"name": "PO-43617",
+				"type": "String"
+			},
+			{
+				"name": "PO-43647",
+				"type": "String"
+			},
+			{
+				"name": "PO-43678",
+				"type": "String"
+			},
+			{
+				"name": "PO-43709",
+				"type": "String"
+			},
+			{
+				"name": "PO-43739",
+				"type": "String"
+			},
+			{
+				"name": "PO-43770",
+				"type": "String"
+			},
+			{
+				"name": "PO-43800",
+				"type": "String"
+			},
+			{
+				"name": "PO-43831",
+				"type": "String"
+			},
+			{
+				"name": "PO-43862",
+				"type": "String"
+			},
+			{
+				"name": "PO-43891",
+				"type": "String"
+			},
+			{
+				"name": "PO-43922",
+				"type": "String"
+			},
+			{
+				"name": "PO-43952",
+				"type": "String"
+			},
+			{
+				"name": "PO-43983",
+				"type": "String"
+			},
+			{
+				"name": "PO-44013",
+				"type": "String"
+			},
+			{
+				"name": "PO-44044",
+				"type": "String"
+			},
+			{
+				"name": "PO-44075",
+				"type": "String"
+			},
+			{
+				"name": "PO-44105",
+				"type": "String"
+			},
+			{
+				"name": "PO-44136",
+				"type": "String"
+			},
+			{
+				"name": "PO-44166",
+				"type": "String"
+			},
+			{
+				"name": "PO-44197",
+				"type": "String"
+			},
+			{
+				"name": "PO-44228",
+				"type": "String"
+			},
+			{
+				"name": "PO-44256",
+				"type": "String"
+			},
+			{
+				"name": "PO-44287",
+				"type": "String"
+			},
+			{
+				"name": "PO-44317",
+				"type": "String"
+			},
+			{
+				"name": "PO-44348",
+				"type": "String"
+			},
+			{
+				"name": "PO-44378",
+				"type": "String"
+			},
+			{
+				"name": "PO-44409",
+				"type": "String"
+			},
+			{
+				"name": "PO-44440",
+				"type": "String"
+			},
+			{
+				"name": "PO-44470",
+				"type": "String"
+			},
+			{
+				"name": "PO-44501",
+				"type": "String"
+			},
+			{
+				"name": "PO-44531",
+				"type": "String"
+			},
+			{
+				"name": "PO-44562",
+				"type": "String"
+			},
+			{
+				"name": "PO-44593",
+				"type": "String"
+			},
+			{
+				"name": "PO-44621",
+				"type": "String"
+			},
+			{
+				"name": "PO-44652",
+				"type": "String"
+			},
+			{
+				"name": "PO-44682",
+				"type": "String"
+			},
+			{
+				"name": "PO-44713",
+				"type": "String"
+			},
+			{
+				"name": "PO-44743",
+				"type": "String"
+			},
+			{
+				"name": "PO-44774",
+				"type": "String"
+			},
+			{
+				"name": "PO-44805",
+				"type": "String"
+			},
+			{
+				"name": "IO-43556",
+				"type": "String"
+			},
+			{
+				"name": "IO-43586",
+				"type": "String"
+			},
+			{
+				"name": "IO-43617",
+				"type": "String"
+			},
+			{
+				"name": "IO-43647",
+				"type": "String"
+			},
+			{
+				"name": "IO-43678",
+				"type": "String"
+			},
+			{
+				"name": "IO-43709",
+				"type": "String"
+			},
+			{
+				"name": "IO-43739",
+				"type": "String"
+			},
+			{
+				"name": "IO-43770",
+				"type": "String"
+			},
+			{
+				"name": "IO-43800",
+				"type": "String"
+			},
+			{
+				"name": "IO-43831",
+				"type": "String"
+			},
+			{
+				"name": "IO-43862",
+				"type": "String"
+			},
+			{
+				"name": "IO-43891",
+				"type": "String"
+			},
+			{
+				"name": "IO-43922",
+				"type": "String"
+			},
+			{
+				"name": "IO-43952",
+				"type": "String"
+			},
+			{
+				"name": "IO-43983",
+				"type": "String"
+			},
+			{
+				"name": "IO-44013",
+				"type": "String"
+			},
+			{
+				"name": "IO-44044",
+				"type": "String"
+			},
+			{
+				"name": "IO-44075",
+				"type": "String"
+			},
+			{
+				"name": "IO-44105",
+				"type": "String"
+			},
+			{
+				"name": "IO-44136",
+				"type": "String"
+			},
+			{
+				"name": "IO-44166",
+				"type": "String"
+			},
+			{
+				"name": "IO-44197",
+				"type": "String"
+			},
+			{
+				"name": "IO-44228",
+				"type": "String"
+			},
+			{
+				"name": "IO-44256",
+				"type": "String"
+			},
+			{
+				"name": "IO-44287",
+				"type": "String"
+			},
+			{
+				"name": "IO-44317",
+				"type": "String"
+			},
+			{
+				"name": "IO-44348",
+				"type": "String"
+			},
+			{
+				"name": "IO-44378",
+				"type": "String"
+			},
+			{
+				"name": "IO-44409",
+				"type": "String"
+			},
+			{
+				"name": "IO-44440",
+				"type": "String"
+			},
+			{
+				"name": "IO-44470",
+				"type": "String"
+			},
+			{
+				"name": "IO-44501",
+				"type": "String"
+			},
+			{
+				"name": "IO-44531",
+				"type": "String"
+			},
+			{
+				"name": "IO-44562",
+				"type": "String"
+			},
+			{
+				"name": "IO-44593",
+				"type": "String"
+			},
+			{
+				"name": "IO-44621",
+				"type": "String"
+			},
+			{
+				"name": "IO-44652",
+				"type": "String"
+			},
+			{
+				"name": "IO-44682",
+				"type": "String"
+			},
+			{
+				"name": "IO-44713",
+				"type": "String"
+			},
+			{
+				"name": "IO-44743",
+				"type": "String"
+			},
+			{
+				"name": "IO-44774",
+				"type": "String"
+			},
+			{
+				"name": "IO-44805",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

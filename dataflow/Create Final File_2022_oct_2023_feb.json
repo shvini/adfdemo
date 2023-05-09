@@ -1,0 +1,106 @@
+{
+	"name": "Create Final File_2022_oct_2023_feb",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "inputYear2022_sep_2023_feb",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "final2019_2020",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "select1"
+				},
+				{
+					"name": "derivedColumn1"
+				},
+				{
+					"name": "select2"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          {Loan ID} as integer,",
+				"          {Customer ID} as integer,",
+				"          {Client status (Alive / Death) - Feb'23} as string,",
+				"          {Group ID} as integer,",
+				"          {Business correspondent (Y/N)} as boolean,",
+				"          {Restructured (Y/N)} as boolean,",
+				"          {% of Retained AUM} as string,",
+				"          {Lending Instituion in case of securtized portfolio} as string,",
+				"          {Write off status} as string,",
+				"          {Write off amount} as string,",
+				"          {Morat 1.0 availed (Y/N)} as boolean,",
+				"          {Morat 2.0 availed (Y/N)} as boolean,",
+				"          Date as date,",
+				"          { PO} as string,",
+				"          { Prin OD} as string,",
+				"          { NPA} as string,",
+				"          { EMI} as string,",
+				"          { Emi-Prin} as string,",
+				"          { booktype} as string,",
+				"          { IO} as string,",
+				"          { Int OD} as string,",
+				"          { DPD} as string,",
+				"          { Int-Prin} as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> source1",
+				"source1 select(mapColumn(",
+				"          AccountID = {Loan ID},",
+				"          ClientID = {Customer ID},",
+				"          {Client status (Alive / Death)} = {Client status (Alive / Death) - Feb'23},",
+				"          Date,",
+				"          PrincipalBalance = { PO},",
+				"          InterestBalance = { IO},",
+				"          {Principal Overdue} = { Prin OD},",
+				"          {Interest Overdue} = { Int OD},",
+				"          DPD = { DPD},",
+				"          {Emi-Prin} = { Emi-Prin},",
+				"          {Emi-Int} = { Int-Prin},",
+				"          booktype = { booktype}",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select1",
+				"select1 derive(report_generated_date = addMonths(Date, 1)) ~> derivedColumn1",
+				"derivedColumn1 select(mapColumn(",
+				"          AccountID,",
+				"          ClientID,",
+				"          {Client status (Alive / Death)},",
+				"          PrincipalBalance,",
+				"          InterestBalance,",
+				"          {Principal Overdue},",
+				"          {Interest Overdue},",
+				"          DPD,",
+				"          {Emi-Prin},",
+				"          {Emi-Int},",
+				"          booktype,",
+				"          report_generated_date",
+				"     ),",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> select2",
+				"select2 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['Portfolio_report_till_2023-02-28.csv'],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> sink1"
+			]
+		}
+	}
+}

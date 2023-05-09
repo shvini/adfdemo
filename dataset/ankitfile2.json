@@ -1,0 +1,702 @@
+{
+	"name": "ankitfile2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmfblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Light Microfinance_Monthly PoS_Apr '19 to Sep '22_2.0_edited.csv",
+				"folderPath": "portfolio from ankit",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan ID",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43556",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43586",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43617",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43647",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43678",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43709",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43739",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43770",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43800",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43831",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43862",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43891",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43922",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43952",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-43983",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44013",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44044",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44075",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44105",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44136",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44166",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44197",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44228",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44256",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44287",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44317",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44348",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44378",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44409",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44440",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44470",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44501",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44531",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44562",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44593",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44621",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44652",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44682",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44713",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44743",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44774",
+				"type": "String"
+			},
+			{
+				"name": "Prin OD-44805",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43556",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43586",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43617",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43647",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43678",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43709",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43739",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43770",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43800",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43831",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43862",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43891",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43922",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43952",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-43983",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44013",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44044",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44075",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44105",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44136",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44166",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44197",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44228",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44256",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44287",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44317",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44348",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44378",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44409",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44440",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44470",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44501",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44531",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44562",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44593",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44621",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44652",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44682",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44713",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44743",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44774",
+				"type": "String"
+			},
+			{
+				"name": "Int OD-44805",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43556",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43586",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43617",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43647",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43678",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43709",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43739",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43770",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43800",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43831",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43862",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43891",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43922",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43952",
+				"type": "String"
+			},
+			{
+				"name": "dpd-43983",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44013",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44044",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44075",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44105",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44136",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44166",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44197",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44228",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44256",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44287",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44317",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44348",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44378",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44409",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44440",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44470",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44501",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44531",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44562",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44593",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44621",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44652",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44682",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44713",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44743",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44774",
+				"type": "String"
+			},
+			{
+				"name": "dpd-44805",
+				"type": "String"
+			},
+			{
+				"name": "npa-43556",
+				"type": "String"
+			},
+			{
+				"name": "npa-43586",
+				"type": "String"
+			},
+			{
+				"name": "npa-43617",
+				"type": "String"
+			},
+			{
+				"name": "npa-43647",
+				"type": "String"
+			},
+			{
+				"name": "npa-43678",
+				"type": "String"
+			},
+			{
+				"name": "npa-43709",
+				"type": "String"
+			},
+			{
+				"name": "npa-43739",
+				"type": "String"
+			},
+			{
+				"name": "npa-43770",
+				"type": "String"
+			},
+			{
+				"name": "npa-43800",
+				"type": "String"
+			},
+			{
+				"name": "npa-43831",
+				"type": "String"
+			},
+			{
+				"name": "npa-43862",
+				"type": "String"
+			},
+			{
+				"name": "npa-43891",
+				"type": "String"
+			},
+			{
+				"name": "npa-43922",
+				"type": "String"
+			},
+			{
+				"name": "npa-43952",
+				"type": "String"
+			},
+			{
+				"name": "npa-43983",
+				"type": "String"
+			},
+			{
+				"name": "npa-44013",
+				"type": "String"
+			},
+			{
+				"name": "npa-44044",
+				"type": "String"
+			},
+			{
+				"name": "npa-44075",
+				"type": "String"
+			},
+			{
+				"name": "npa-44105",
+				"type": "String"
+			},
+			{
+				"name": "npa-44136",
+				"type": "String"
+			},
+			{
+				"name": "npa-44166",
+				"type": "String"
+			},
+			{
+				"name": "npa-44197",
+				"type": "String"
+			},
+			{
+				"name": "npa-44228",
+				"type": "String"
+			},
+			{
+				"name": "npa-44256",
+				"type": "String"
+			},
+			{
+				"name": "npa-44287",
+				"type": "String"
+			},
+			{
+				"name": "npa-44317",
+				"type": "String"
+			},
+			{
+				"name": "npa-44348",
+				"type": "String"
+			},
+			{
+				"name": "npa-44378",
+				"type": "String"
+			},
+			{
+				"name": "npa-44409",
+				"type": "String"
+			},
+			{
+				"name": "npa-44440",
+				"type": "String"
+			},
+			{
+				"name": "npa-44470",
+				"type": "String"
+			},
+			{
+				"name": "npa-44501",
+				"type": "String"
+			},
+			{
+				"name": "npa-44531",
+				"type": "String"
+			},
+			{
+				"name": "npa-44562",
+				"type": "String"
+			},
+			{
+				"name": "npa-44593",
+				"type": "String"
+			},
+			{
+				"name": "npa-44621",
+				"type": "String"
+			},
+			{
+				"name": "npa-44652",
+				"type": "String"
+			},
+			{
+				"name": "npa-44682",
+				"type": "String"
+			},
+			{
+				"name": "npa-44713",
+				"type": "String"
+			},
+			{
+				"name": "npa-44743",
+				"type": "String"
+			},
+			{
+				"name": "npa-44774",
+				"type": "String"
+			},
+			{
+				"name": "npa-44805",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

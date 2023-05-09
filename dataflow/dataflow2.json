@@ -1,0 +1,73 @@
+{
+	"name": "dataflow2",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "employeedata",
+						"type": "DatasetReference"
+					},
+					"name": "employeeinfo"
+				},
+				{
+					"dataset": {
+						"referenceName": "departmentinfo",
+						"type": "DatasetReference"
+					},
+					"name": "departmentinfo"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "outputinfo",
+						"type": "DatasetReference"
+					},
+					"name": "outputdata"
+				}
+			],
+			"transformations": [
+				{
+					"name": "empdepjoins"
+				}
+			],
+			"scriptLines": [
+				"source(output(",
+				"          {emp id} as string,",
+				"          name as string,",
+				"          country as string,",
+				"          depid as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> employeeinfo",
+				"source(output(",
+				"          depid as string,",
+				"          depname as string",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false) ~> departmentinfo",
+				"employeeinfo, departmentinfo join(employeeinfo@depid == departmentinfo@depid,",
+				"     joinType:'inner',",
+				"     matchType:'exact',",
+				"     ignoreSpaces: false,",
+				"     broadcast: 'auto')~> empdepjoins",
+				"empdepjoins sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     partitionFileNames:['employee'],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          {emp id},",
+				"          empname = name,",
+				"          country,",
+				"          depname",
+				"     ),",
+				"     partitionBy('hash', 1)) ~> outputdata"
+			]
+		}
+	}
+}

@@ -1,0 +1,122 @@
+{
+	"name": "inputYear2022_sep_2023_feb",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lmfblob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "2022-onwards-2.csv",
+				"folderPath": "portfolio from ankit/summarisedfiles",
+				"container": "test"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Loan ID",
+				"type": "String"
+			},
+			{
+				"name": "Customer ID",
+				"type": "String"
+			},
+			{
+				"name": "Client status (Alive / Death) - Feb'23",
+				"type": "String"
+			},
+			{
+				"name": "Group ID",
+				"type": "String"
+			},
+			{
+				"name": "Business correspondent (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Restructured (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": " PO-44835 ",
+				"type": "String"
+			},
+			{
+				"name": "% of Retained AUM",
+				"type": "String"
+			},
+			{
+				"name": "Lending Instituion in case of securtized portfolio",
+				"type": "String"
+			},
+			{
+				"name": "Write off status",
+				"type": "String"
+			},
+			{
+				"name": "Write off amount",
+				"type": "String"
+			},
+			{
+				"name": "Morat 1.0 availed (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Morat 2.0 availed (Y/N)",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": " PO",
+				"type": "String"
+			},
+			{
+				"name": " Prin OD",
+				"type": "String"
+			},
+			{
+				"name": " NPA",
+				"type": "String"
+			},
+			{
+				"name": " EMI",
+				"type": "String"
+			},
+			{
+				"name": " Emi-Prin",
+				"type": "String"
+			},
+			{
+				"name": " booktype",
+				"type": "String"
+			},
+			{
+				"name": " IO",
+				"type": "String"
+			},
+			{
+				"name": " Int OD",
+				"type": "String"
+			},
+			{
+				"name": " DPD",
+				"type": "String"
+			},
+			{
+				"name": " Int-Prin",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,29 @@
+{
+	"name": "selfhosteddemoSQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"Servername": {
+				"type": "string",
+				"defaultValue": "LAPTOP-B9IJNBGC"
+			},
+			"Databasename": {
+				"type": "string",
+				"defaultValue": "master"
+			},
+			"Username": {
+				"type": "string",
+				"defaultValue": "LAPTOP-B9IJNBGC\\ashvi"
+			},
+			"Password": {
+				"type": "string",
+				"defaultValue": "A$hu0733"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Data Source=@{linkedService().Servername};Initial Catalog=@{linkedService().Databasename};User ID=@{linkedService().Username};Password=@{linkedService().Password}"
+		}
+	}
+}
